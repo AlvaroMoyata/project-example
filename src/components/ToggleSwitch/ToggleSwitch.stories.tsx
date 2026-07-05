@@ -7,6 +7,10 @@ const meta: Meta<typeof ToggleSwitch> = {
   tags: ['autodocs'],
   argTypes: {
     onChange: { action: 'changed' },
+    color: {
+        control: 'select',
+      options: ['primary', 'secondary', 'default'],
+    },
   },
 };
 
@@ -17,6 +21,7 @@ export const Off: Story = {
   args: {
     label: 'Notificaciones',
     defaultChecked: false,
+    color: 'primary',
   },
 };
 
@@ -31,5 +36,12 @@ export const SinLabel: Story = {
   args: {
     label: '',
     defaultChecked: true,
+  },
+};
+
+export const ConTextoPersonalizado: Story = {
+  args: {
+    label: 'Acepto términos',
+    defaultChecked: false,
   },
 };
