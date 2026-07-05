@@ -8,7 +8,7 @@ const meta: Meta<typeof ToggleSwitch> = {
   argTypes: {
     onChange: { action: 'changed' },
     color: {
-        control: 'select',
+      control: 'select',
       options: ['primary', 'secondary', 'default'],
     },
   },
